@@ -1,6 +1,6 @@
 export const light = {
     headerText: '#fff',
-    headerBg: 'rgb(103, 111, 226)',
+    headerBg: 'linear-gradient(to right, #5866dd, #4a00e0);',
     bodyBg: '#f4f6f8',
     cardBg: '#fff',
     cardShadow: '0 2px 14px -8px #b7babb',
@@ -12,7 +12,7 @@ export const light = {
 
 export const dark = {
     headerText: '#fff',
-    headerBg: 'rgb(103, 111, 226)',
+    headerBg: 'linear-gradient(to right, #5866dd, #4a00e0);',
     bodyBg: '#131823',
     cardBg: '#19202d',
     cardShadow: '0 2px 14px -8px #000',

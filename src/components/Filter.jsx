@@ -38,6 +38,7 @@ const Filter = () => {
   const { dispatch } = useContext(CTX);
 
   const handleSearch = () => {
+    dispatch({ type: "TOGGLE_LOADING" });
     axios
       .get("https://github-jobs.glitch.me/positions.json", {
         params: {
@@ -49,6 +50,7 @@ const Filter = () => {
       })
       .then(resp => {
         dispatch({ type: "UPDATE_JOBS", payload: resp.data });
+        dispatch({ type: "TOGGLE_LOADING" });
       });
   };
 
